@@ -16,5 +16,6 @@ module.exports = {
                 presets:['es2015','react']
             }
         }]
-    }
+    },
+    watch:true
 }

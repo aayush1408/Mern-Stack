@@ -13,7 +13,6 @@ app.use(express.static(path.join(__dirname, 'client')));
 
 app.use('/api',api);
 
-
 app.listen('3000',()=>{
     console.log('server running at 3000');
 });
