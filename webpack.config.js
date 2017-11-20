@@ -14,12 +14,12 @@ module.exports = {
             exclude:/node_modules/,
             query:{
                 presets:['es2015','react']
-            },
-            {
+            }
+        },
+        {
                 test:/\.css$/,
                 loader:['css-loader','style-loader'],
                 exclude:/node_modules/
-            }
         }]
     },
     watch:true

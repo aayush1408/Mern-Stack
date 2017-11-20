@@ -1004,7 +1004,7 @@ var _navbar2 = _interopRequireDefault(_navbar);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-_reactDom2.default.render(_react2.default.createElement(_app2.default, null), document.getElementById('app'));
+_reactDom2.default.render(_react2.default.createElement(_navbar2.default, null), document.getElementById('app'));
 
 /***/ }),
 /* 16 */
@@ -18330,6 +18330,8 @@ var _reactDom = __webpack_require__(7);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+__webpack_require__(29);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -18380,6 +18382,12 @@ var Navbar = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Navbar;
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed: Unknown word (5:1)\n\n  3 | // load the styles\n  4 | var content = require(\"!!./navbar.css\");\n> 5 | if(typeof content === 'string') content = [[module.id, content, '']];\n    | ^\n  6 | // Prepare cssTransformation\n  7 | var transform;\n  8 | \n");
 
 /***/ })
 /******/ ]);
