@@ -1,21 +1,10 @@
-const express = require('express');
-const path = require('path');
-const app = express();
+const express =require('express');
 
-let api = require('./server/routes/api.js');
+const app =express();
 
-app.set('view engine', 'html');
-app.engine('html', function (path, options, callbacks) {
-  fs.readFile(path, 'utf-8', callback);
-});
+app.get('/hello',(req,res)=>{
+        res.send("Hello world");
+})
 
-app.use(express.static(path.join(__dirname, 'client')));
-
-app.use('/api',api);
-
-app.listen('5000',()=>{
-    console.log('server running at 5000');
-});
-
-module.exports = app;
-
+const PORT = process.env.PORT || 5000;
+app.listen(PORT);
